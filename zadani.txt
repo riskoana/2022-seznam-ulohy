@@ -1,0 +1,42 @@
+#1 Přátelé
+    Říká se, že přátelé mých přátel jsou i mými přáteli.
+    Mějme komunitu lidi, ve kterých každý může mít pár přátel, se kterými se zná přímo.
+    Zároveň, podle známého rčení, pokud Adam je přítel Bena a Ben je přítel Cecílie, tak Adam je přítelem Cecílie.
+    Aplikace tohoto pravidla se nám rozrůstá naše skupina přátel.
+    Náš úkol bude najít největší skupinku na základě vstupních dat.
+    Napište program, který na základě vstupních dat:
+        population_size: celková velikost naší komunity
+        friendships: seznam přímých přátelství ve tvaru [(1,2),(2,3),(4,5),(4,6),(6,7),...]
+    identifikuje největší skupinu přátel a řekne nám, jak je velká.
+
+
+#2 Autokorekce
+    Každý občas udělá nějaký ten překlep nebo gramatickou chybu.
+    Náš úkol bude napsat jednoduchý program/funkci, které předáme seznam slov a vět.
+    Funkce se vrátí, pokud existují dle zadaných pravidel, možné varianty slov ze slovníku.
+    Pro jednoduchost budeme pracovat pouze s malými písmeny.
+    Pravidla:
+        Záměna pismen: okno vs. onkO
+        Písmeno navic: pošta vs. poošta
+        Překlep v písmenu: jablko vs. japlko
+        Chybějící písmeno: jablko vs. jabko
+        Kontrolujeme pouze slova delší, než 2 znaky
+    Příklad vstupu:
+        Zadaná véta: “Včera  jsm měl k obědu svíčkovu a pèk knedliků"
+        Slovník: ("kalendář","banán","svíčkovou", "klíč","měsíc","kámen","jsi","jsem","včera"}
+    Příklad  výstupu:
+        {"jsm": ["jsi", "jsem" ], "svíčkovu": ["svičkovou"]}
+
+
+#3 Kontrola závorek
+    Vývojáři rádi píšou kód v editoru, který jim pomáhá nedělat tolik syntaktických chyb.
+    Nejčastěji se setkáme s kontrolou dvojic závorek nebo html tagů, kde editor kontroluje, že blok začíná stejným tagem jako končí.
+    Napište program, který přijímá řetězec znaků, vyhodnocuje pravidla níže a na výstup vypíše "ano" nebo "ne" (ještě je řetězec vyvážený nebo ne).
+    Pravidla:
+        závorky patří do množiny znaků (, }, GJ G)
+        prázdný retězec je vyvážený
+        A je vyvážený řetězec
+        [A], {A}, (A) jsou vyvážené, pokud A je vyvážené
+    Přiklad:
+        Vstup: (abc[  [d]e]fe, {c}} Výstup: ano
+        Vstup: [po0[s)foo] Výstup: ne
